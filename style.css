@@ -1,0 +1,67 @@
+*::after,*::before {
+    box-sizing: border-box;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: aqua;
+    position: relative;
+}
+
+.clock .number {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: rotate(calc( var(--rotamber) *1deg));
+}
+
+.clock .number.number1 {--rotamber:30;}
+.clock .number.number2 {--rotamber:60;}
+.clock .number.number3 {--rotamber:90;}
+.clock .number.number4 {--rotamber:120;}
+.clock .number.number5 {--rotamber:150;}
+.clock .number.number6 {--rotamber:180;}
+.clock .number.number7 {--rotamber:210;}
+.clock .number.number8 {--rotamber:240;}
+.clock .number.number9 {--rotamber:270;}
+.clock .number.number10 {--rotamber:300;}
+.clock .number.number11 {--rotamber:330;}
+.clock .number.number12 {--rotamber:360;}
+
+
+.clock .hand{
+    --rotation:0;
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    bottom: 50%;
+    transform: translatex(-50%) rotate(calc( var(--rotation) *1deg));  ;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: bottom;
+}
+
+.hand.second {
+    height: 45%;
+    width: 5px;
+    background-color: rgb(250, 79, 79);
+}
+.hand.menute {
+    height: 40%;
+    width:8px;
+
+}
+.hand.hour {
+    height: 35%;
+    width: 10px;
+}
+
