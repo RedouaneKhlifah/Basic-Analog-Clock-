@@ -1,13 +1,6 @@
 *::after,*::before {
     box-sizing: border-box;
 }
-.cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-}
 .clock {
     width: 300px;
     height: 300px;
@@ -64,4 +57,3 @@
     height: 35%;
     width: 10px;
 }
-
